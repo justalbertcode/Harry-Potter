@@ -1,0 +1,252 @@
+/* --------------------Basic ---------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+/*   background: radial-gradient(at top, #feffff, #161a19); */
+background:url(https://www.bagvania.com/wp-content/uploads/2019/07/harry-potter-1.jpg) no-repeat center top / cover; 
+  font-family: "Lato", sans-serif;
+  font-family: "Lacquer", sans-serif;
+}
+h2,h3 {
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.9);
+  padding: 5px;
+}
+h2 {
+  display: block;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  font-size: 2rem;
+}
+#main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+ 
+}
+
+/* --------------------Header ------------------------------*/
+#title {
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  line-height: 1;
+  opacity: 0;
+  transition: 2s;
+  margin-bottom: 5px;
+}
+#title:hover {
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  line-height: 1;
+  opacity: 1;
+  transition: 3s;
+}
+.logo {
+  max-width: 100%;
+  display: block;
+  transition: 3s;
+  cursor: pointer;
+  height: auto;
+  margin: 0 auto;
+}
+.logo:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  transition: 3s;
+}
+.info {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.9);
+  margin: 10px;
+}
+#img-div {
+  padding: 10px;
+  text-align: center;
+}
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+#image:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
+#img-caption {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 3px;
+}
+/*----------------------------- Movie parts------------------------------- */
+.parts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin: 20px;
+}
+.part {
+  max-width: 500px;
+/*   background: radial-gradient(at top, #ffffff, #777A79); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 20px;
+/*   border: 1px solid gray; */
+}
+.part h3 {
+  padding: 15px;
+}
+.part img {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.part:hover {
+  background: #fafaf3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+}
+.part img:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.part-container {
+  padding: 20px;
+}
+
+/*-------------------------- About author ------------------------*/
+.author {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  justify-content: center;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 0;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
+}
+.author img {
+  max-width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+.author img:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.author blockquote {
+  width: 40%;
+  height: auto;
+  margin: 30px;
+  text-align: center;
+  justify-content: center;
+}
+a {
+  color: darkblue;
+  text-decoration: none;
+}
+/*--------------------------- Footer -------------------------------*/
+#footer {
+  display: block;
+  text-align: center;
+}
+.footer {
+  display: block;
+  text-align: center;
+}
+.wiki {
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
+h2:last-child {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+img {
+  border-radius: 20px;
+}
+.title {
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  line-height: 1;
+  opacity: 0;
+  transition: 2s;
+}
+.title:hover {
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  line-height: 1;
+  opacity: 1;
+  transition: 3s;
+}
+
+/*  -------------------- Media ----------------------*/
+
+@media screen and (max-width: 1160px) {
+  .author {
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .author-text {
+    text-align: center;
+    width: 100%;
+  }
+  .author img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .author blockquote {
+    width: 90%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .parts {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    margin: 20px;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 765px) {
+  .parts {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin: 20px;
+    justify-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .parts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 10px;
+  }
+  .part {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .author {
+    margin: 0 auto;
+  }
+}
