@@ -107,6 +107,9 @@ h2 {
 }
 .part img {
   cursor: pointer;
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .part:hover {
